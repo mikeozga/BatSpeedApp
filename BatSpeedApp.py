@@ -29,7 +29,7 @@ PITCH_TYPES = {
 }
 
 # Load and preprocess data
-df = pd.read_csv("statcast2024.csv")
+df = pd.read_csv("heatmap.csv")
 df_cleaned = df.dropna(subset=['plate_x', 'plate_z', 'bat_speed', 'p_throws'])
 
 # Map pitch codes to descriptions
